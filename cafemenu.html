@@ -40,11 +40,11 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">MUSEUM</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="museum.html">MUSEUM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cafemenu.html">CAFÉ MENU</a>
+                        <a class="nav-link active" href="#">CAFÉ MENU</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="shop.html">SHOP</a>
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="prices.html">TIMES/PRICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tickets.html">TICKETS</a>
+                        <a class="nav-link " href="tickets.html">TICKETS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">CONTACT US</a>
@@ -68,7 +68,8 @@
         </div>
     </nav>
 
-<!--Modal: Login / Register Form-->
+
+    <!--Modal: Login / Register Form-->
 <div class="modal fade" id="loginModal" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog cascading-modal" role="document">
       <!--Content-->
@@ -169,36 +170,36 @@
   </div>
   <!--Modal: Login / Register Form-->
 
-
-
-
     <div class="container">
         <div class="row">
             <div class="col">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Museum</li>
+                    <li class="breadcrumb-item"><a href="museum.html">Museum</a></li>
+                    <li class="breadcrumb-item active">Café Menu</li>
                 </ol>
-                
+
             </div>
         </div>
     </div>
 
-    <!-- Page Content -->
-    <div class="container">
 
+
+    <div class="container mb-3">
         <!-- Jumbotron Header -->
         <header class="jumbotron my-4 bg-cover"
-            style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%),url(img/jumbomuse.jpg)">
+            style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%),url(img/menulogo.jpg)">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-4 col-sm-3 col-md-2 align-self-center">
                         <img src="img/logo.png" class="img-fluid" />
                     </div>
-                    <h1 class="display-3">Museum!</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in
+                    <h1 class="display-3">Café Menu!</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi,
+                        in
                         quo sunt
-                        possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat
+                        possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae
+                        fugiat
                         numquam
                         repellat.</p>
                     <a href="#" id="jumbotronButton" class="btn btn-primary btn-lg ">Learn More!</a>
@@ -207,58 +208,128 @@
         </header>
 
 
-
-        <div class="row row-cols-1 row-cols-md-2 g-4 mb-3">
-            <div class="col">
-                <div class="card">
-                    <img src="img/tourchoc.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+        <div class="container">
+            <img src="Img/dine2.jpg" class="rounded mx-auto d-block" alt="..." width="200" height="200">
+            <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading1" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example1" aria-expanded="true"
+                                data-parent="#accordion" data-toggle="collapse" href="#example1" role="button">COFFEE
+                                <span class="glyphicon glyphicon-collapse-down"></span></a>
+                        </h3>
+                    </div>
+                    <div aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example One Body</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/tourchoc.jpg" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                            
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading2" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example2" aria-expanded="false" class="collapsed"
+                                data-parent="#accordion" data-toggle="collapse" href="#example2" role="button">HOT
+                                CHOCOLATE <span class="glyphicon glyphicon-collapse-down"></span></a></h3>
+                    </div>
+                    <div aria-labelledby="heading2" class="panel-collapse collapse" id="example2" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example Two Body</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading3" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example3" aria-expanded="false" class="collapsed"
+                                data-parent="#accordion" data-toggle="collapse" href="#example3" role="button">DRINKING
+                                CHOCOLATE <span class="glyphicon glyphicon-collapse-down"></span></a></h3>
+                    </div>
+                    <div aria-labelledby="heading3" class="panel-collapse collapse" id="example3" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example Three Body</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading4" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example4" aria-expanded="false" class="collapsed"
+                                data-parent="#accordion" data-toggle="collapse" href="#example4" role="button">GELATO
+                                <span class="glyphicon glyphicon-collapse-down"></span></a>
+                        </h3>
+                    </div>
+                    <div aria-labelledby="heading2" class="panel-collapse collapse" id="example4" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example Four Body</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4 mb-3">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                    <img src="img/tourchoc.jpg" class="card-img-top" alt="...">
 
+
+
+        <div class="container">
+            <img src="img/dine2.jpg" class="rounded mx-auto d-block" alt="..." width="200" height="200">
+
+            <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading5" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example5" aria-expanded="true"
+                                data-parent="#accordion" data-toggle="collapse" href="#example5" role="button">BAKED
+                                <span class="glyphicon glyphicon-collapse-down"></span></a></h3>
+                    </div>
+                    <div aria-labelledby="heading1" class="panel-collapse collapse in" id="example5" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example One Body</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading6" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example6" aria-expanded="false" class="collapsed"
+                                data-parent="#accordion" data-toggle="collapse" href="#example6" role="button">PASTRIES
+                                <span class="glyphicon glyphicon-collapse-down"></span></a>
+                        </h3>
                     </div>
-                    <img src="img/tourchoc.jpg" class="card-img-top" alt="...">
-
+                    <div aria-labelledby="heading2" class="panel-collapse collapse" id="example6" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example Two Body</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading7" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example7" aria-expanded="false" class="collapsed"
+                                data-parent="#accordion" data-toggle="collapse" href="#example7" role="button">HOUSE
+                                SPECIALTIES
+                                <span class="glyphicon glyphicon-collapse-down"></span></a></h3>
+                    </div>
+                    <div aria-labelledby="heading3" class="panel-collapse collapse" id="example7" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example Three Body</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading" id="heading8" role="tab">
+                        <h3 class="panel-title"><a aria-controls="example8" aria-expanded="false" class="collapsed"
+                                data-parent="#accordion" data-toggle="collapse" href="#example8" role="button">PANINIS
+                                <span class="glyphicon glyphicon-collapse-down"></span></a>
+                        </h3>
+                    </div>
+                    <div aria-labelledby="heading2" class="panel-collapse collapse" id="example8" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Example Four Body</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+
+
+
+
 
 
 
@@ -269,13 +340,12 @@
                     <h5>Links</h5>
                     <ul class="">
                         <li><a class="btn-link" href="index.html">Home</a></li>
-                        <li><a class="btn-link" href="#">Museum</a></li>
-                        <li><a class="btn-link" href="cafemenu.html">Café Menu</a></li>
+                        <li><a class="btn-link" href="museum.html">Museum</a></li>
+                        <li><a class="btn-link" href="#">Café Menu</a></li>
                         <li><a class="btn-link" href="shop.html">Shop</a></li>
                         <li><a class="btn-link" href="prices.html">Times/Prices</a></li>
                         <li><a class="btn-link" href="tickets.html">Tickets</a></li>
                         <li><a class="btn-link" href="contactus.html">Contact Us</a></li>
-
                     </ul>
                 </div>
                 <div class="col-5 col-sm-5 text-center ">
@@ -307,6 +377,7 @@
             <p class=" col-sm-11 m-0 text-center text-black">&copy; 2021<b> iHeart Chocolate Museum.</b> All Rights
                 Reserved.</p>
         </div>
+
         <!-- /.container -->
 
     </footer>
@@ -343,5 +414,6 @@
         });
       </script>
 </body>
+
 
 </html>
