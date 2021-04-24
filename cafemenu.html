@@ -70,105 +70,121 @@
 
 
     <!--Modal: Login / Register Form-->
-<div class="modal fade" id="loginModal" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog cascading-modal" role="document">
-      <!--Content-->
-      <div class="modal-content">
-  
-        <!--Modal cascading tabs-->
-        <div class="modal-c-tabs ">
-  
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3 " role="tablist">
-            <li class="nav-item ">
-              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i>
-                Login</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i>
-                Register</a>
-            </li>
-          </ul>
-  
-          <!-- Tab panels -->
-          <div class="tab-content">
-            <!--Panel 7-->
-            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-  
-              <!--Body-->
-              <div class="modal-body mb-1">
-                <div class="md-form form-sm mb-5">
-                  <i class="fa fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+    <div class="modal fade" id="loginModal" style="display: none;" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs ">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3 " role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                    class="fa fa-user mr-1"></i>
+                                Login</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                    class="fa fa-user-plus mr-1"></i>
+                                Register</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput10"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your
+                                        email</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput11"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your
+                                        password</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-info">Log in </button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                        <!--/.Panel 7-->
+
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Your
+                                        email</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput13"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                        password</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput14"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
+                                        password</label>
+                                </div>
+
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Sign up </button>
+                                </div>
+
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a>
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+
                 </div>
-  
-                <div class="md-form form-sm mb-4">
-                  <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
-                </div>
-                <div class="text-center mt-2">
-                  <button class="btn btn-info">Log in </button>
-                </div>
-              </div>
-              <!--Footer-->
-              <div class="modal-footer">
-                <div class="options text-center text-md-right mt-1">
-                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-                </div>
-                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-              </div>
-  
             </div>
-            <!--/.Panel 7-->
-  
-            <!--Panel 8-->
-            <div class="tab-pane fade" id="panel8" role="tabpanel">
-  
-              <!--Body-->
-              <div class="modal-body">
-                <div class="md-form form-sm mb-5">
-                  <i class="fa fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
-                </div>
-  
-                <div class="md-form form-sm mb-5">
-                  <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
-                </div>
-  
-                <div class="md-form form-sm mb-4">
-                  <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
-                </div>
-  
-                <div class="text-center form-sm mt-2">
-                  <button class="btn btn-info">Sign up </button>
-                </div>
-  
-              </div>
-              <!--Footer-->
-              <div class="modal-footer">
-                <div class="options text-right">
-                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
-                </div>
-                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <!--/.Panel 8-->
-          </div>
-  
+            <!--/.Content-->
         </div>
-      </div>
-      <!--/.Content-->
     </div>
-  </div>
-  <!--Modal: Login / Register Form-->
+    <!--Modal: Login / Register Form-->
 
     <div class="container">
         <div class="row">
@@ -195,21 +211,15 @@
                         <img src="img/logo.png" class="img-fluid" />
                     </div>
                     <h1 class="display-3">Café Menu!</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi,
-                        in
-                        quo sunt
-                        possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae
-                        fugiat
-                        numquam
-                        repellat.</p>
-                    <a href="#" id="jumbotronButton" class="btn btn-primary btn-lg ">Learn More!</a>
+                    <p class="lead">Spectacular way to enjoy chocolate! Come enjoy a chocolate meal!</p>
+                    <a href="tickets.html" id="jumbotronButton" class="btn btn-info btn-lg ">Get Tickets Now!</a>
                 </div>
             </div>
         </header>
 
 
         <div class="container">
-            <img src="Img/dine2.jpg" class="rounded mx-auto d-block" alt="..." width="200" height="200">
+            <img src="Img/latte.jpg" class="rounded mx-auto d-block" alt="..." width="200" height="200">
             <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
                 <div class="panel panel-warning">
                     <div class="panel-heading" id="heading1" role="tab">
@@ -220,7 +230,18 @@
                     </div>
                     <div aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example One Body</p>
+                            <ul class="a">
+                                <li>Latte</li>
+                                <li>Americano</li>
+                                <li>Machiatto</li>
+                                <li>Cappuccino</li>
+                                <li>Mocha</li>
+                                <li>Expresso</li>
+                                <li>Double espresso</li>
+                                <li>Iced Mocha</li>
+                                <li>Iced Latte</li>
+                                <li>Iced Coffee</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -232,7 +253,11 @@
                     </div>
                     <div aria-labelledby="heading2" class="panel-collapse collapse" id="example2" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example Two Body</p>
+                            <ul class="a">
+                                <li>Caramelia, Dark and Regular</li>
+                                
+                            </ul> 
+                              
                         </div>
                     </div>
                 </div>
@@ -244,7 +269,14 @@
                     </div>
                     <div aria-labelledby="heading3" class="panel-collapse collapse" id="example3" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example Three Body</p>
+                            <ul class="a">
+                                <li>White</li>
+                                <li>Dulce de leche</li>
+                                <li>Caramel</li>
+                                <li>Milk</li>
+                                <li>Dark</li>
+                               
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -257,7 +289,13 @@
                     </div>
                     <div aria-labelledby="heading2" class="panel-collapse collapse" id="example4" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example Four Body</p>
+                            <ul class="a">
+                                <li>Kids Gelato (1 scoop), small (2 scoop),<br> large (3 scoop)</li>
+                                <li>Small Milkshake</li>
+                                <li>Large Milkshake</li>
+                                <li>Affogato (Gelato with coffee)</li>
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -268,7 +306,7 @@
 
 
         <div class="container">
-            <img src="img/dine2.jpg" class="rounded mx-auto d-block" alt="..." width="200" height="200">
+            <img src="img/baked.jpg" class="rounded mx-auto d-block" alt="..." width="200" height="200">
 
             <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
                 <div class="panel panel-warning">
@@ -279,7 +317,13 @@
                     </div>
                     <div aria-labelledby="heading1" class="panel-collapse collapse in" id="example5" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example One Body</p>
+                            <ul class="a">
+                                <li>Croissant</li>
+                                <li>Chocolate Croissant</li>
+                                <li>Madelein</li>
+                                
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -292,7 +336,12 @@
                     </div>
                     <div aria-labelledby="heading2" class="panel-collapse collapse" id="example6" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example Two Body</p>
+                            <ul class="a">
+                                <li>Nutela Panini (add Strawberry,<br> Banana or marshmallow)</li>
+                                <li>Variety of Mini cakes</li>
+                                <li>Artisan Housemade Chocolate<br> Truffles</li>
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -305,7 +354,20 @@
                     </div>
                     <div aria-labelledby="heading3" class="panel-collapse collapse" id="example7" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example Three Body</p>
+                            <ul class="a">
+                                <li>Quiche Sampler</li>
+                                <li>Small Cheese Platter</li>
+                                <li>Large Cheese Platter
+                                </li>
+                                <li>Chocolate Fondue
+                                </li>
+                                <li>Caprese Salad (tomatoes,<br> mozzarella, basil pesto,<br> balsamic glaze)</li>
+                                <li>Soup of the Day
+                                </li>
+                                <li>House Salad
+                                </li>
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -318,7 +380,27 @@
                     </div>
                     <div aria-labelledby="heading2" class="panel-collapse collapse" id="example8" role="tabpanel">
                         <div class="panel-body">
-                            <p>Example Four Body</p>
+                            <ul class="a">
+                                <li>American (turkey, cheddar, mayo,<br> tomato)</li>
+                                <li>Caprese (tomato, mozzarella, basil<br> pesto)</li>
+                                <li>Italian (turkey, salami, dijon<br> mustard, tomato, provolone)
+                                </li>
+                                <li>Mediterranean (prosciutto,<br> provolone, roasted tomatoes)
+                                </li>
+                                <li>French (brie, pear, honey, thyme)</li>
+                                <li>Spanish (Manchego cheese,<br> roasted tomatoes, hot or mild<br> salami)
+                                </li>
+                                <li>Grilled Cheese (Cheddar,<br> provolone,  mayo)
+                                </li>
+                                <li>Chicken Avocado (Chicken<br> avocado, goat cheese, balsamic)
+                                </li>
+                                <li>Chicken Lingonberry (Chicken,<br> ham, cheddar, oregano,<br> lingonberry ham)
+                                </li>
+                                <li>“Cheesesteak” Panini (Steak,<br> caramelized onions, provolone<br> and mayo)
+                                </li>
+                                
+                            </ul> 
+
                         </div>
                     </div>
                 </div>
@@ -388,31 +470,31 @@
 
     <script>
         $(function () {
-          $(".carousel").carousel({ interval: 2000 });
-          $("#carouselButton").click(function () {
-            if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-              $(".carousel").carousel("pause");
-              $("#carouselButton").children("i").removeClass("fa-pause");
-              $("#carouselButton").children("i").addClass("fa-play");
-            } else {
-              $(".carousel").carousel("cycle");
-              $("#carouselButton").children("i").removeClass("fa-play");
-              $("#carouselButton").children("i").addClass("fa-pause");
-            }
-          });
-          // Modal Activation
-        $("#reserveButton").click(function(){
-            $("#reserveModal").modal("show");
-        })
-            
-    
-    $("#loginButton").click(function(){
-        $("#loginModal").modal("show");
-    })
-        
-    
+            $(".carousel").carousel({ interval: 2000 });
+            $("#carouselButton").click(function () {
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                }
+            });
+            // Modal Activation
+            $("#reserveButton").click(function () {
+                $("#reserveModal").modal("show");
+            })
+
+
+            $("#loginButton").click(function () {
+                $("#loginModal").modal("show");
+            })
+
+
         });
-      </script>
+    </script>
 </body>
 
 
